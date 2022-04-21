@@ -1,0 +1,37 @@
+<html>
+<head>
+<script language="javascript">
+//Javascript program for character validation and number validartion on keypress even
+function onlyalpha(e)
+{
+	key=e.keyCode;
+	if((key>=65 && key<=90) || (key>95 && key<=122))
+	{
+		
+		return true;
+	}
+	else
+	{
+	alert("you cannot enter numbers")
+	return false;
+	}
+}
+function onlynum(e)
+{
+	key=e.keyCode;
+	if(key>=49 && key<=57)
+	{
+		return true;
+	}
+	else
+	{
+		alert("You cannot enter alphabets")
+		return false;
+	}
+}
+</script></head>
+<body>
+Name:<input type="text" id="txtname" onKeyPress="return onlyalpha(event)">
+Mobile No:<input type="text" id="txtname" onKeyPress="return onlynum(event)">
+</body>
+</html>
