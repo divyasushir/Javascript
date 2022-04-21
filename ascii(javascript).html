@@ -1,0 +1,14 @@
+<html>
+<head>
+<script language="javascript">
+//for ascii code and charactor show
+function myKeyPress(e)
+{
+	
+	keynum=e.keyCode;//local variable=key ascii code it is use to accies ascii code 
+	alert(keynum+" "+String/*object*/.fromCharCode(keynum));//for charactor value
+}</script></head>
+<body>
+Enter Any Thing<input type="text" id="a" onKeyPress="return myKeyPress(event)"/>
+</body>
+</html>
