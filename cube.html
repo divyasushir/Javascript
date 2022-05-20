@@ -1,18 +1,17 @@
 <html>
-<head>
-<title>JavaScript Program to find Square and Cube of a number</title>
-</head>
 <script type="text/javascript">
 function cube()
 {
-var a,Cube;
-a=parseInt (document.getElementById("first").value);
-Cube=a*a*a;
-document.getElementById("num").innerHTML="Cube of"+a+"is="+Cube;
+	var a,Cube;
+	a=parseInt(document.getElementById("textno").value);
+	Cube=a*a*a;
+	document.getElementById("num").innerHTML="Cube of"+a+"is="+Cube;
 }
-</script><body>
-<table>
-<tr><td>
-<input type="text" name="a" id="first" placeholdee="Enter a number"></td></tr>
-<tr><td>
-<button onclick="cube()"id="num">Submit</button></td></tr></table></body></html>
+</script>
+ <body>
+  <table><tr><td>
+  <input type="text" placeholder="Enter number" id="textno" name="a">
+  </tr></td>
+  <tr><td>
+  <button onclick="cube()" id="num">submit</button></tr></td></table> </body>
+</html>
